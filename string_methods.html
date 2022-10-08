@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>string Methods</title>
+</head>
+<body>
+    <!-- 
+        String Methods..
+1. indexOf
+2. lastIndexOf
+3. charAt
+4. charCodeAt
+5. at
+6. slice
+7. substring
+8. search
+9. split
+10. match
+11. replace
+12. replaceAll
+13. concat
+14. toUpperCase
+15. toLowerCase
+16. padStart
+17. padEnd
+18. trim
+19. trimStart
+20. trimEnd
+21. startsWith
+22. endsWith
+23. includes
+24. repeat
+     -->
+    <script>
+        
+        'use strict';
+        // indexOf
+        const a = 'This is a sample program';
+        console.log(a.indexOf('h'),'indexOf');
+        console.log(a.indexOf('h',3),'indexOf');
+        console.log(a.indexOf('s',4),'indexOf');
+
+        // lastIndexOf
+        console.log(a.lastIndexOf('a'),'lastIndexOf');
+        console.log(a.lastIndexOf('a',10),'lastIndexOf');
+        console.log(a.lastIndexOf('z'),'lastIndexOf');
+
+        // charAt
+        console.log(a.charAt(1),'charAt');
+        console.log(a.charAt(30),'charAt');
+
+        // charCodeAt
+        console.log(a.charCodeAt(1),'charCodeAt');
+        console.log(a.charCodeAt(25),'charCodeAt');
+
+        // at
+        console.log(a.at(-4),'at');
+
+        // slice
+        console.log(a.slice(0,4),'slice');
+        console.log(a.slice(5),'slice');
+        console.log(a.slice(-7),'slice');
+
+        // subString
+        console.log(a.substring(0,7),'subString');
+        console.log(a.substring(0,4),'subString');
+        console.log(a.substring(4,0),'subString');
+
+        // search
+        console.log(a.search('this'),'search');
+        console.log(a.search('This'),'search');
+        console.log(a.search(/this/i),'search');
+        console.log(a.search(/this/g),'search');
+        console.log(a.search(/this/ig),'search');
+
+        // split
+        console.log(a.split(" "),'split');
+        console.log(a.split("",4),'split');
+
+
+        // match
+        console.log(a.match("i"),'match');
+        console.log(a.match(/i/i),'match');
+        console.log(a.match(/i/g),'match');
+        console.log(a.match(/i/ig),'match');
+
+        //replace
+        console.log(a.replace("This","that"),'replace');
+        console.log(a.replace(/I/i,"zz"),'replace');
+        console.log(a.replace(/I/ig,"zz"),'replace');
+
+        //replaceAll
+        console.log(a.replaceAll("i","a"),'replaceAll');
+
+        //concat
+        console.log(a.concat("..."),'match');
+        console.log(a+"...",'match');
+        console.log(`${a}...`,'match');
+
+        //toUpperCase
+        console.log(a.toUpperCase(),'toUpperCase');
+
+        //toLowerCase
+        console.log(a.toLowerCase(),'toLowerCase');
+
+        //padEnd
+        console.log(a.padEnd(29,"..."),'padEnd');
+
+        //padstart
+        console.log(a.padStart(29,"..."),'padStart');
+
+        //trim
+        const b = "   hello    ";
+        console.log(b.trim(),'trim');
+
+        //trimStart
+        console.log(b.trimStart(),'trimStart');
+
+        //trimEnd
+        console.log(b.trimEnd(),'trimEnd');
+
+        //startsWith
+        console.log(a.startsWith("this"),'startsWith');
+        console.log(a.startsWith("is",5),'startsWith');
+
+        //endsWith
+        console.log(a.endsWith("program"),'endsWith');
+        console.log(a.endsWith("progra"),'endsWith');
+        console.log(a.endsWith("is",6),'endsWith');
+        console.log(a.endsWith("is",7),'endsWith');
+
+        //includes
+        console.log(a.includes("this"),'includes');
+        console.log(a.includes("This"),'includes');
+        console.log(a.includes("is",5),'includes');
+
+        //repeat
+        console.log(a.repeat(2));
+
+    </script>
+</body>
+</html>
